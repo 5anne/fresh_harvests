@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import Banner from "@/components/Banner";
 import BlogSection from "@/components/BlogSection";
+import Footer from "@/components/Footer";
 import FreshProducts from "@/components/FreshProducts";
 import Navbar from "@/components/Navbar";
 import Offer from "@/components/Offer";
@@ -18,6 +19,7 @@ export default function Page() {
                 <Testimonial></Testimonial>
                 <BlogSection></BlogSection>
             </div>
+            <Footer></Footer>
         </>
     )
 }
