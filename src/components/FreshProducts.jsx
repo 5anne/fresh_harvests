@@ -34,6 +34,9 @@ const FreshProducts = () => {
                     ))
                 }
             </div>
+            <div className='flex justify-center items-center mt-8'>
+                <button className='border-2 border-[#FF6A1A] rounded-lg text-[#FF6A1A] font-bold px-4 py-2 hover:bg-[#FF6A1A80] hover:text-white'>See All Products</button>
+            </div>
         </div>
     );
 };
