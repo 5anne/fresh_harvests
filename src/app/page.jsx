@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Banner from "@/components/Banner";
+import BlogSection from "@/components/BlogSection";
 import FreshProducts from "@/components/FreshProducts";
 import Navbar from "@/components/Navbar";
 import Offer from "@/components/Offer";
@@ -15,6 +16,7 @@ export default function Page() {
                 <About></About>
                 <Offer></Offer>
                 <Testimonial></Testimonial>
+                <BlogSection></BlogSection>
             </div>
         </>
     )

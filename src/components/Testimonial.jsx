@@ -24,7 +24,7 @@ const Testimonial = () => {
             </div>
             <Carousel>
                 <CarouselContent>
-                    <CarouselItem className="flex justify-center items-center gap-14 py-12">
+                    <CarouselItem className="flex justify-center items-center gap-14 pt-12">
                         <div className=''>
                             <Image alt='Customer' src={customer}></Image>
                         </div>
@@ -34,7 +34,7 @@ const Testimonial = () => {
                             <p className='text-[#212337] mt-4'><span className='font-semibold'>Jane Doe</span> - Professional chef</p>
                         </div>
                     </CarouselItem>
-                    <CarouselItem className="flex justify-center items-center gap-14 py-12">
+                    <CarouselItem className="flex justify-center items-center gap-14 pt-12">
                         <div className=''>
                             <Image alt='Customer' src={customer}></Image>
                         </div>
@@ -44,7 +44,7 @@ const Testimonial = () => {
                             <p className='text-[#212337] mt-4'><span className='font-semibold'>Jane Snow</span> - Professional chef</p>
                         </div>
                     </CarouselItem>
-                    <CarouselItem className="flex justify-center items-center gap-14 py-12">
+                    <CarouselItem className="flex justify-center items-center gap-14 pt-12">
                         <div className=''>
                             <Image alt='Customer' src={customer}></Image>
                         </div>
