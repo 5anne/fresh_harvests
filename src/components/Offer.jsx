@@ -5,7 +5,7 @@ import leaf from "../images/leaf1.png";
 
 const Offer = () => {
     return (
-        <div className='flex items-center mt-24'>
+        <div className='flex items-center pt-24'>
             <div className='bg-no-repeat bg-cover bg-center bg-gray-100 bg-blend-multiply pl-14 pt-20 h-[450px]' style={{ backgroundImage: "url(https://i.ibb.co.com/Vg5jMR2/bg2.jpg)" }}>
                 <button className='text-[#749B3F] font-semibold bg-[#749B3F1A] px-4 py-1 rounded-2xl'>Special Offer</button>
                 <h1 className='text-[#212337] text-5xl font-bold my-3'>Seasonal Fruit Bundle</h1>

@@ -3,6 +3,7 @@ import Banner from "@/components/Banner";
 import FreshProducts from "@/components/FreshProducts";
 import Navbar from "@/components/Navbar";
 import Offer from "@/components/Offer";
+import Testimonial from "@/components/Testimonial";
 
 export default function Page() {
     return (
@@ -13,6 +14,7 @@ export default function Page() {
                 <FreshProducts></FreshProducts>
                 <About></About>
                 <Offer></Offer>
+                <Testimonial></Testimonial>
             </div>
         </>
     )

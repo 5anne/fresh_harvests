@@ -1,18 +1,18 @@
 import React from 'react';
 import SectionTitle from './SectionTitle';
 import Image from 'next/image';
-import leaf1 from "../images/leaf1.png";
+import leaf2 from "../images/leaf2.jpg";
 import mushroom from "../images/mushroom.png";
 
 const FreshProducts = () => {
     return (
-        <div className='my-12'>
+        <div className='mt-24'>
             <div className='flex justify-evenly'>
-                <Image width={100} height={100} alt='Leaf' src={leaf1}></Image>
+                <Image width={150} height={100} alt='Leaf' src={leaf2}></Image>
                 <SectionTitle tag="Our Products" title="Our Fresh Products" description="We pride ourselves on offering a wide variety of fresh and flavorful fruits, vegetables, and salad ingredients." />
-                <Image width={100} height={100} alt='Leaf' src={leaf1} className='bg-white'></Image>
+                <Image width={150} height={100} alt='Leaf' src={leaf2}></Image>
             </div>
-            <div className='flex justify-center items-center gap-4'>
+            <div className='flex justify-center items-center gap-4 my-8'>
                 <button className='text-[#A6A6A6] border-2 border-[#A6A6A6] rounded-lg px-4 py-1 hover:bg-[#749B3F] hover:border-none hover:text-white'>All</button>
                 <button className='text-[#A6A6A6] border-2 border-[#A6A6A6] rounded-lg px-4 py-1 hover:bg-[#749B3F] hover:border-none hover:text-white'>Fruit</button>
                 <button className='text-[#A6A6A6] border-2 border-[#A6A6A6] rounded-lg px-4 py-1 hover:bg-[#749B3F] hover:border-none hover:text-white'>Vegetables</button>
