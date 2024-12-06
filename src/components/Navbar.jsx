@@ -81,7 +81,7 @@ const Navbar = () => {
                     user ?
                         <>
                             <Link href={`/adminDashboard/${user?.user_email}`} className='rounded-full'>
-                                <Image width={40} height={40} alt={user?.user_name} src={user.image}></Image>
+                                <Image width={40} height={40} alt={user?.user_name} src={user?.image}></Image>
                             </Link>
                         </> :
                         <>
@@ -124,7 +124,7 @@ const Navbar = () => {
                                                     <span>Or</span>
                                                     <p className='border-[1px] w-full'></p>
                                                 </div>
-                                                <p className='font-bold text-center text-black my-4'>Don’t have an account? <button className='text-[#FF6A1A]' onClick={toggleModal}>Sign up</button></p>
+                                                <p className='font-bold text-center text-black my-4'>Do not have an account? <button className='text-[#FF6A1A]' onClick={toggleModal}>Sign up</button></p>
                                             </div>
                                         </dialog>
                                     </> :

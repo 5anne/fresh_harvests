@@ -16,19 +16,19 @@ const BlogSection = () => {
                 <div className='space-y-2 font-semibold'>
                     <Image width={500} height={500} alt="Blog" src={blogImg} />
                     <p className='text-[#4A4A52]'>May 23, 2024</p>
-                    <p className=''>Exploring Seasonal Delights: A Guide to What's Fresh Right Now</p>
+                    <p className=''>Exploring Seasonal Delights: A Guide to What is Fresh Right Now</p>
                     <button className='text-[#FF6A1A] flex items-center gap-2'>Read More <FaLongArrowAltRight /></button>
                 </div>
                 <div className='space-y-2 font-semibold'>
                     <Image width={500} height={500} alt="Blog" src={blogImg} />
                     <p className='text-[#4A4A52]'>May 23, 2024</p>
-                    <p className=''>Exploring Seasonal Delights: A Guide to What's Fresh Right Now</p>
+                    <p className=''>Exploring Seasonal Delights: A Guide to What is Fresh Right Now</p>
                     <button className='text-[#FF6A1A] flex items-center gap-2'>Read More <FaLongArrowAltRight /></button>
                 </div>
                 <div className='space-y-2 font-semibold'>
                     <Image width={500} height={500} alt="Blog" src={blogImg} />
                     <p className='text-[#4A4A52]'>May 23, 2024</p>
-                    <p className=''>Exploring Seasonal Delights: A Guide to What's Fresh Right Now</p>
+                    <p className=''>Exploring Seasonal Delights: A Guide to What is Fresh Right Now</p>
                     <button className='text-[#FF6A1A] flex items-center gap-2'>Read More <FaLongArrowAltRight /></button>
                 </div>
             </div>

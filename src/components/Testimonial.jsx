@@ -30,7 +30,7 @@ const Testimonial = () => {
                         </div>
                         <div className='lg:w-1/2 text-[#4A4A52] bg-[#F4F6F6] rounded-lg p-8 relative mt-8 lg:mt-0'>
                             <Image alt='pattern' src={pattern} className='absolute -top-[150%] lg:-top-[40%] left-[80%] lg:-left-[10%]'></Image>
-                            <p>"I absolutely love Fresh Harvest! The quality of their produce is outstanding. It's always fresh, flavorful, and delicious. The convenience of ordering online and having it delivered to my doorstep saves me so much time. Fresh Harvest has become my go-to for all my fruit and vegetable needs.</p>
+                            <p>I absolutely love Fresh Harvest! The quality of their produce is outstanding. It is always fresh, flavorful, and delicious. The convenience of ordering online and having it delivered to my doorstep saves me so much time. Fresh Harvest has become my go-to for all my fruit and vegetable needs.</p>
                             <p className='text-[#212337] mt-4'><span className='font-semibold'>Jane Doe</span> - Professional chef</p>
                         </div>
                     </CarouselItem>
@@ -40,7 +40,7 @@ const Testimonial = () => {
                         </div>
                         <div className='lg:w-1/2 text-[#4A4A52] bg-[#F4F6F6] rounded-lg p-8 relative mt-8 lg:mt-0'>
                             <Image alt='pattern' src={pattern} className='hidden absolute -top-[40%] -left-[10%]'></Image>
-                            <p>"I absolutely love Fresh Harvest! The quality of their produce is outstanding. It's always fresh, flavorful, and delicious. The convenience of ordering online and having it delivered to my doorstep saves me so much time. Fresh Harvest has become my go-to for all my fruit and vegetable needs.</p>
+                            <p>I absolutely love Fresh Harvest! The quality of their produce is outstanding. It is always fresh, flavorful, and delicious. The convenience of ordering online and having it delivered to my doorstep saves me so much time. Fresh Harvest has become my go-to for all my fruit and vegetable needs.</p>
                             <p className='text-[#212337] mt-4'><span className='font-semibold'>Jane Doe</span> - Professional chef</p>
                         </div>
                     </CarouselItem>
@@ -50,7 +50,7 @@ const Testimonial = () => {
                         </div>
                         <div className='lg:w-1/2 text-[#4A4A52] bg-[#F4F6F6] rounded-lg p-8 relative mt-8 lg:mt-0'>
                             <Image alt='pattern' src={pattern} className='hidden absolute -top-[40%] -left-[10%]'></Image>
-                            <p>"I absolutely love Fresh Harvest! The quality of their produce is outstanding. It's always fresh, flavorful, and delicious. The convenience of ordering online and having it delivered to my doorstep saves me so much time. Fresh Harvest has become my go-to for all my fruit and vegetable needs.</p>
+                            <p>I absolutely love Fresh Harvest! The quality of their produce is outstanding. It is always fresh, flavorful, and delicious. The convenience of ordering online and having it delivered to my doorstep saves me so much time. Fresh Harvest has become my go-to for all my fruit and vegetable needs.</p>
                             <p className='text-[#212337] mt-4'><span className='font-semibold'>Jane Doe</span> - Professional chef</p>
                         </div>
                     </CarouselItem>
