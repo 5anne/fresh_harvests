@@ -1,4 +1,4 @@
-"use client"
+// "use server"
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import React, { useState } from 'react';
@@ -7,7 +7,7 @@ import Image from 'next/image';
 import { Pagination, Stack } from '@mui/material';
 import Link from 'next/link';
 
-const shop = () => {
+const Shop = () => {
     const [items, setItems] = useState(foodProducts);
     const [products, setProducts] = useState([]);
 
@@ -62,7 +62,7 @@ const shop = () => {
     );
 };
 
-export default shop;
+export default Shop;
 
 const foodProducts = [
     {

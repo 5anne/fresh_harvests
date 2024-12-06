@@ -57,7 +57,7 @@ const blog = () => {
                     <button className='text-[#A6A6A6] border-2 border-[#A6A6A6] rounded-lg px-2 lg:px-4 py-1 hover:bg-[#749B3F] hover:border-none hover:text-white'>Reviews (1)</button>
                 </div>
                 <div className='text-[#4A4A52] bg-[#F4F6F6] rounded-lg p-8 mt-8 lg:w-2/3'>
-                    <p>"Our coconuts are sustainably grown, ensuring the best quality and taste. Each coconut is handpicked and carefully prepared, offering you the freshest product possible. Rich in healthy fats, electrolytes, and essential nutrients, coconuts provide both hydration and nourishment. Whether you’re using the water, flesh, or milk, our coconuts bring versatility to your kitchen while supporting healthy living.
+                    <p>Our coconuts are sustainably grown, ensuring the best quality and taste. Each coconut is handpicked and carefully prepared, offering you the freshest product possible. Rich in healthy fats, electrolytes, and essential nutrients, coconuts provide both hydration and nourishment. Whether you are using the water, flesh, or milk, our coconuts bring versatility to your kitchen while supporting healthy living.
 
                         Perfect for smoothies, desserts, curries, and more — let the natural sweetness of the coconut elevate your recipes. Enjoy the tropical goodness in its purest form, directly from nature.</p>
                 </div>

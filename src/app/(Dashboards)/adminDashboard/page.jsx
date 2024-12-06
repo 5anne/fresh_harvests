@@ -6,7 +6,7 @@ import React from 'react';
 import logo from "../../../images/logo.png";
 import { useParams } from 'next/navigation';
 
-const adminProfile = () => {
+const AdminProfile = () => {
 
     const info = useParams();
     console.log(info);
@@ -72,4 +72,4 @@ const adminProfile = () => {
     );
 };
 
-export default adminProfile;
+export default AdminProfile;
