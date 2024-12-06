@@ -8,7 +8,7 @@ import { RiShoppingCartFill } from "react-icons/ri";
 const Navbar = () => {
     return (
         <header className='fixed z-10 '>
-            <div className='container flex justify-evenly items-center h-20 min-w-[1250px] mx-auto'>
+            <div className='container flex justify-evenly items-center h-20 lg:min-w-[1250px] mx-auto'>
                 <Link
                     href='/'
                     rel='noopener noreferrer'

@@ -12,7 +12,7 @@ export default function Page() {
         <>
             <Navbar></Navbar>
             <Banner></Banner>
-            <div className="w-[1080px] mx-auto">
+            <div className="lg:w-[1080px] mx-auto">
                 <FreshProducts></FreshProducts>
                 <About></About>
                 <Offer></Offer>

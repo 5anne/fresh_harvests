@@ -14,7 +14,7 @@ import applePay from "../images/ApplePay.jpg";
 const Footer = () => {
     return (
         <>
-            <footer className="footer bg-base-200 text-base-content p-10 mt-24">
+            <footer className="footer bg-base-200 text-base-content px-4 lg:px-10 pt-10 mt-24">
                 <aside>
                     <Link
                         href='/'
@@ -27,13 +27,6 @@ const Footer = () => {
                             Fresh Harvests
                         </h2>
                     </Link>
-                    <div className='mt-12'>
-                        <p className='font-semibold'>Download App:</p>
-                        <div className='flex items-center gap-4 mt-4'>
-                            <Image width={150} height={150} alt='App Store' src={appStore}></Image>
-                            <Image width={150} height={150} alt='Google Play' src={googlePlay}></Image>
-                        </div>
-                    </div>
                 </aside>
                 <nav>
                     <h6 className="footer-title text-black">Quick links 1</h6>
@@ -54,22 +47,31 @@ const Footer = () => {
                     <a className="link link-hover flex items-center gap-1"><span className='text-[#749B3F]'><FaPhone /></span>1234 5678 90</a>
                     <a className="link link-hover flex items-center gap-1"><span className='text-[#749B3F]'><MdOutlineEmail /></span>Freshharvests@gmail.com</a>
                     <a className="link link-hover flex items-center gap-1"><span className='text-[#749B3F]'><LuMapPin /></span>Tanjung Sari Street, Pontianak, Indonesia</a>
-                    <div className='mt-4'>
-                        <p className='font-semibold'>Accepted Payment Methods:</p>
-                        <div className='flex items-center gap-4 mt-4'>
-                            <Image width={65} height={50} alt='App Store' src={visa}></Image>
-                            <Image width={65} height={50} alt='Google Play' src={payPal}></Image>
-                            <Image width={65} height={50} alt='Google Play' src={applePay}></Image>
-                        </div>
-                    </div>
                 </nav>
             </footer>
-            <footer className="footer bg-base-200 text-base-content border-base-300 border-t px-10 py-4">
-                <aside className="grid-flow-col items-center font-semibold">
+            <div className='flex flex-col-reverse lg:flex-row lg:gap-[550px] bg-base-200 text-base-content px-10 pb-8'>
+                <div className='mt-8 lg:mt-0'>
+                    <p className='font-semibold'>Download App:</p>
+                    <div className='flex items-center gap-4 mt-4'>
+                        <Image width={150} height={150} alt='App Store' src={appStore}></Image>
+                        <Image width={150} height={150} alt='Google Play' src={googlePlay}></Image>
+                    </div>
+                </div>
+                <div className='mt-8 lg:mt-0'>
+                    <p className='font-semibold'>Accepted Payment Methods:</p>
+                    <div className='flex items-center gap-4 mt-4'>
+                        <Image width={65} height={50} alt='App Store' src={visa}></Image>
+                        <Image width={65} height={50} alt='Google Play' src={payPal}></Image>
+                        <Image width={65} height={50} alt='Google Play' src={applePay}></Image>
+                    </div>
+                </div>
+            </div>
+            <footer className="footer footer-center flex flex-col-reverse lg:flex-row lg:gap-[700px] bg-base-200 text-base-content border-base-300 border-t px-10 py-4">
+                <aside className="grid-flow-col items-center font-semibold text-center">
                     <p>© Copyright 2024, All Rights Reserved by Banana Studio</p>
                 </aside>
                 <nav className="md:place-self-center md:justify-self-end">
-                    <div className="grid grid-flow-col gap-4">
+                    <div className="grid grid-flow-col gap-4 mt-4 lg:mt-0">
                         <a>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"

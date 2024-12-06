@@ -8,17 +8,17 @@ const FreshProducts = () => {
     return (
         <div className='mt-24'>
             <div className='flex justify-evenly'>
-                <Image width={150} height={100} alt='Leaf' src={leaf2}></Image>
+                <Image width={150} height={100} alt='Leaf' src={leaf2} className='w-10 lg:w-28 h-10 lg:h-28'></Image>
                 <SectionTitle tag="Our Products" title="Our Fresh Products" description="We pride ourselves on offering a wide variety of fresh and flavorful fruits, vegetables, and salad ingredients." />
-                <Image width={150} height={100} alt='Leaf' src={leaf2}></Image>
+                <Image width={150} height={100} alt='Leaf' src={leaf2} className='w-10 lg:w-28 h-10 lg:h-28'></Image>
             </div>
-            <div className='flex justify-center items-center gap-4 my-8'>
-                <button className='text-[#A6A6A6] border-2 border-[#A6A6A6] rounded-lg px-4 py-1 hover:bg-[#749B3F] hover:border-none hover:text-white'>All</button>
-                <button className='text-[#A6A6A6] border-2 border-[#A6A6A6] rounded-lg px-4 py-1 hover:bg-[#749B3F] hover:border-none hover:text-white'>Fruit</button>
-                <button className='text-[#A6A6A6] border-2 border-[#A6A6A6] rounded-lg px-4 py-1 hover:bg-[#749B3F] hover:border-none hover:text-white'>Vegetables</button>
-                <button className='text-[#A6A6A6] border-2 border-[#A6A6A6] rounded-lg px-4 py-1 hover:bg-[#749B3F] hover:border-none hover:text-white'>Salad</button>
+            <div className='flex justify-center items-center gap-2 lg:gap-4 my-8'>
+                <button className='text-[#A6A6A6] border-2 border-[#A6A6A6] rounded-lg px-2 lg:px-4 py-1 hover:bg-[#749B3F] hover:border-none hover:text-white'>All</button>
+                <button className='text-[#A6A6A6] border-2 border-[#A6A6A6] rounded-lg px-2 lg:px-4 py-1 hover:bg-[#749B3F] hover:border-none hover:text-white'>Fruit</button>
+                <button className='text-[#A6A6A6] border-2 border-[#A6A6A6] rounded-lg px-2 lg:px-4 py-1 hover:bg-[#749B3F] hover:border-none hover:text-white'>Vegetables</button>
+                <button className='text-[#A6A6A6] border-2 border-[#A6A6A6] rounded-lg px-2 lg:px-4 py-1 hover:bg-[#749B3F] hover:border-none hover:text-white'>Salad</button>
             </div>
-            <div className='grid grid-cols-4 gap-8'>
+            <div className='grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-8 px-4 lg:px-0'>
                 {
                     products.map((product, index) => (
                         <div key={index} className='shadow-xl rounded-lg space-y-1 p-4'>
@@ -28,7 +28,7 @@ const FreshProducts = () => {
                             <h1 className='text-center text-[#212337] font-bold'>{product.foodTitle}</h1>
                             <p className='text-center text-[#4A4A52]'>${product.price}/kg</p>
                             <div className='flex justify-center items-center'>
-                                <button className='border-2 rounded-lg px-4 py-2 hover:border-none hover:bg-[#FF6A1A] hover:text-white'>Add to cart</button>
+                                <button className='border-2 rounded-lg px-4 py-2 text-sm lg:text-base hover:border-none hover:bg-[#FF6A1A] hover:text-white'>Add to cart</button>
                             </div>
                         </div>
                     ))
