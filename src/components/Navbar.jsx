@@ -9,6 +9,7 @@ import { RiShoppingCartFill } from "react-icons/ri";
 const Navbar = () => {
     const [isLoginModalOpen, setIsLoginModalOpen] = useState(true);
     const [user, setUser] = useState([]);
+    console.log(user);
 
     const toggleModal = () => {
         setIsLoginModalOpen(!isLoginModalOpen);
@@ -336,7 +337,7 @@ const users = [
         id: 1,
         image: "https://i.ibb.co.com/1bt1MHX/jadj-kedm-220303.jpg",
         user_name: "Sara",
-        user_email: "sara@gmail.com",
+        user_email: "admin@gmail.com",
         password: 12345678,
         status: "Admin"
     }

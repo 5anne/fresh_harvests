@@ -12,7 +12,7 @@ const FreshProducts = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await fetch('http://localhost:3001/api');
+                const response = await fetch('https://fresh-harvests-beta.vercel.app/api');
                 const data = await response.json();
 
                 setProducts(data);
