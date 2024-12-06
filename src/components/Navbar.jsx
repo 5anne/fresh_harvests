@@ -77,7 +77,7 @@ const Navbar = () => {
             <div className='flex items-center gap-4 text-[#FFFFFF]'>
                 <button className='hidden lg:flex items-center gap-2'><FaHeart />Favorites</button>
                 <button className='flex items-center gap-2 ml-10 lg:ml-0'><RiShoppingCartFill /><span className='hidden lg:flex'>Cart</span></button>
-                {
+                {/* {
                     user ?
                         <>
                             <Link href={`/adminDashboard/${user?.user_email}`} className='rounded-full'>
@@ -85,96 +85,97 @@ const Navbar = () => {
                             </Link>
                         </> :
                         <>
-                            <button className='hidden lg:flex border-2 border-[#FFFFFF] rounded-lg px-4 py-2' onClick={() => document.getElementById('my_modal_3').showModal()}>Sign In</button>
-                            {
-                                isLoginModalOpen ?
-                                    <>
-                                        <dialog id="my_modal_3" className="modal">
-                                            <div className="modal-box card rounded-none bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-                                                <form method="dialog">
-                                                    <button className="btn btn-sm btn-circle absolute right-2 top-2">✕</button>
-                                                </form>
-                                                <form onSubmit={handleUserLogin} method="card-body">
-                                                    <h1 className='text-center text-3xl text-black font-extrabold my-4'>Login</h1>
-                                                    <div className="form-control">
-                                                        <label className="label">
-                                                            <span className="label-text">Email</span>
-                                                        </label>
-                                                        <input type="email" name='email' placeholder="Enter Your Email" className="input input-bordered text-black" required />
-                                                    </div>
-                                                    <div className="form-control">
-                                                        <label className="label">
-                                                            <span className="label-text">Password</span>
-                                                        </label>
-                                                        <input type="password" name='password' placeholder="Enter Your Password" className="input input-bordered text-black" required />
-                                                        <label className="label my-4">
-                                                            <div className='flex items-center gap-2 text-[#FF6A1A] text-sm'>
-                                                                <input type="checkbox" className="checkbox" />
-                                                                <p> Remember me</p>
-                                                            </div>
-                                                            <a href="#" className="label-text-alt link link-hover underline">Forgot password?</a>
-                                                        </label>
-                                                    </div>
-                                                    <div className="form-control">
-                                                        <button className="btn bg-[#FF6A1A] text-white text-lg">Login</button>
-                                                    </div>
-                                                </form>
-                                                <div className='flex justify-center items-center gap-2 text-black font-bold mt-4'>
-                                                    <p className='border-[1px] w-full'></p>
-                                                    <span>Or</span>
-                                                    <p className='border-[1px] w-full'></p>
+                            
+                        </>
+                } */}
+                <button className='hidden lg:flex border-2 border-[#FFFFFF] rounded-lg px-4 py-2' onClick={() => document.getElementById('my_modal_3').showModal()}>Sign In</button>
+                {
+                    isLoginModalOpen ?
+                        <>
+                            <dialog id="my_modal_3" className="modal">
+                                <div className="modal-box card rounded-none bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                                    <form method="dialog">
+                                        <button className="btn btn-sm btn-circle absolute right-2 top-2">✕</button>
+                                    </form>
+                                    <form onSubmit={handleUserLogin} method="card-body">
+                                        <h1 className='text-center text-3xl text-black font-extrabold my-4'>Login</h1>
+                                        <div className="form-control">
+                                            <label className="label">
+                                                <span className="label-text">Email</span>
+                                            </label>
+                                            <input type="email" name='email' placeholder="Enter Your Email" className="input input-bordered text-black" required />
+                                        </div>
+                                        <div className="form-control">
+                                            <label className="label">
+                                                <span className="label-text">Password</span>
+                                            </label>
+                                            <input type="password" name='password' placeholder="Enter Your Password" className="input input-bordered text-black" required />
+                                            <label className="label my-4">
+                                                <div className='flex items-center gap-2 text-[#FF6A1A] text-sm'>
+                                                    <input type="checkbox" className="checkbox" />
+                                                    <p> Remember me</p>
                                                 </div>
-                                                <p className='font-bold text-center text-black my-4'>Do not have an account? <button className='text-[#FF6A1A]' onClick={toggleModal}>Sign up</button></p>
-                                            </div>
-                                        </dialog>
-                                    </> :
-                                    <>
-                                        <dialog id="my_modal_3" className="modal">
-                                            <div className="modal-box card rounded-none bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-                                                <form method="dialog">
-                                                    <button className="btn btn-sm btn-circle absolute right-2 top-2">✕</button>
-                                                </form>
-                                                <form method="card-body">
-                                                    <h1 className='text-center text-3xl text-black font-extrabold my-4'>Register</h1>
-                                                    <div className="form-control">
-                                                        <label className="label">
-                                                            <span className="label-text">Full Name</span>
-                                                        </label>
-                                                        <input type="text" placeholder="Enter Your Full Name" className="input input-bordered text-black" required />
-                                                    </div>
-                                                    <div className="form-control">
-                                                        <label className="label">
-                                                            <span className="label-text">Email</span>
-                                                        </label>
-                                                        <input type="email" placeholder="Enter Your Email" className="input input-bordered text-black" required />
-                                                    </div>
-                                                    <div className="form-control">
-                                                        <label className="label">
-                                                            <span className="label-text">Password</span>
-                                                        </label>
-                                                        <input type="password" placeholder="Enter Your Password" className="input input-bordered text-black" required />
-                                                        <label className="label my-4">
-                                                            <div className='flex items-center gap-2 text-[#FF6A1A] text-sm'>
-                                                                <input type="checkbox" className="checkbox" />
-                                                                <p> Remember me</p>
-                                                            </div>
-                                                            <a href="#" className="label-text-alt link link-hover underline">Forgot password?</a>
-                                                        </label>
-                                                    </div>
-                                                    <div className="form-control">
-                                                        <button className="btn bg-[#FF6A1A] text-white text-lg">Register</button>
-                                                    </div>
-                                                </form>
-                                                <div className='flex justify-center items-center gap-2 text-black font-bold mt-4'>
-                                                    <p className='border-[1px] w-full'></p>
-                                                    <span>Or</span>
-                                                    <p className='border-[1px] w-full'></p>
+                                                <a href="#" className="label-text-alt link link-hover underline">Forgot password?</a>
+                                            </label>
+                                        </div>
+                                        <div className="form-control">
+                                            <button className="btn bg-[#FF6A1A] text-white text-lg">Login</button>
+                                        </div>
+                                    </form>
+                                    <div className='flex justify-center items-center gap-2 text-black font-bold mt-4'>
+                                        <p className='border-[1px] w-full'></p>
+                                        <span>Or</span>
+                                        <p className='border-[1px] w-full'></p>
+                                    </div>
+                                    <p className='font-bold text-center text-black my-4'>Do not have an account? <button className='text-[#FF6A1A]' onClick={toggleModal}>Sign up</button></p>
+                                </div>
+                            </dialog>
+                        </> :
+                        <>
+                            <dialog id="my_modal_3" className="modal">
+                                <div className="modal-box card rounded-none bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                                    <form method="dialog">
+                                        <button className="btn btn-sm btn-circle absolute right-2 top-2">✕</button>
+                                    </form>
+                                    <form method="card-body">
+                                        <h1 className='text-center text-3xl text-black font-extrabold my-4'>Register</h1>
+                                        <div className="form-control">
+                                            <label className="label">
+                                                <span className="label-text">Full Name</span>
+                                            </label>
+                                            <input type="text" placeholder="Enter Your Full Name" className="input input-bordered text-black" required />
+                                        </div>
+                                        <div className="form-control">
+                                            <label className="label">
+                                                <span className="label-text">Email</span>
+                                            </label>
+                                            <input type="email" placeholder="Enter Your Email" className="input input-bordered text-black" required />
+                                        </div>
+                                        <div className="form-control">
+                                            <label className="label">
+                                                <span className="label-text">Password</span>
+                                            </label>
+                                            <input type="password" placeholder="Enter Your Password" className="input input-bordered text-black" required />
+                                            <label className="label my-4">
+                                                <div className='flex items-center gap-2 text-[#FF6A1A] text-sm'>
+                                                    <input type="checkbox" className="checkbox" />
+                                                    <p> Remember me</p>
                                                 </div>
-                                                <p className='font-bold text-center text-black my-4'>Already have an account? <button className='text-[#FF6A1A]' onClick={toggleModal}>Log In </button></p>
-                                            </div>
-                                        </dialog>
-                                    </>
-                            }
+                                                <a href="#" className="label-text-alt link link-hover underline">Forgot password?</a>
+                                            </label>
+                                        </div>
+                                        <div className="form-control">
+                                            <button className="btn bg-[#FF6A1A] text-white text-lg">Register</button>
+                                        </div>
+                                    </form>
+                                    <div className='flex justify-center items-center gap-2 text-black font-bold mt-4'>
+                                        <p className='border-[1px] w-full'></p>
+                                        <span>Or</span>
+                                        <p className='border-[1px] w-full'></p>
+                                    </div>
+                                    <p className='font-bold text-center text-black my-4'>Already have an account? <button className='text-[#FF6A1A]' onClick={toggleModal}>Log In </button></p>
+                                </div>
+                            </dialog>
                         </>
                 }
             </div>
@@ -335,7 +336,7 @@ const users = [
         id: 1,
         image: "https://i.ibb.co.com/1bt1MHX/jadj-kedm-220303.jpg",
         user_name: "Sara",
-        user_email: "admin@gmail.com",
+        user_email: "sara@gmail.com",
         password: 12345678,
         status: "Admin"
     }
