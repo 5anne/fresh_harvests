@@ -1,8 +1,6 @@
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import React from 'react';
-import mushroom from "../../images/mushroom.png";
-import coconut from "../../images/coconut.jpg";
 import Image from 'next/image';
 import { Rating } from '@mui/material';
 import { RiShoppingCartFill } from 'react-icons/ri';
@@ -25,13 +23,13 @@ const blog = () => {
                     <Carousel className="border-2 rounded-lg lg:px-20 lg:w-1/2">
                         <CarouselContent>
                             <CarouselItem>
-                                <Image width={500} height={300} alt="Mushroom" src={mushroom} ></Image>
+                                <Image width={500} height={300} alt="Mushroom" src="https://i.ibb.co.com/tHHPKSh/mushroom.png" ></Image>
                             </CarouselItem>
                             <CarouselItem>
-                                <Image width={500} height={300} alt="Mushroom" src={coconut} ></Image>
+                                <Image width={500} height={300} alt="Mushroom" src="https://i.ibb.co.com/bJX4JNT/16-2.jpg" ></Image>
                             </CarouselItem>
                             <CarouselItem>
-                                <Image width={500} height={300} alt="Mushroom" src={mushroom} ></Image>
+                                <Image width={500} height={300} alt="Mushroom" src="https://i.ibb.co.com/WtMWzDf/16-4.jpg" ></Image>
                             </CarouselItem>
                         </CarouselContent>
                         <CarouselPrevious />
@@ -68,7 +66,7 @@ const blog = () => {
                             products.map((product, index) => (
                                 <div key={index} className='shadow-xl rounded-lg space-y-1 p-4'>
                                     <div className='flex justify-center items-center bg-[#F4F6F6] rounded-lg'>
-                                        <Image width={200} height={200} alt='Mushroom' src={mushroom}></Image>
+                                        <Image width={200} height={200} alt={product.foodTitle} src={product.image}></Image>
                                     </div>
                                     <h1 className='text-center text-[#212337] font-bold'>{product.foodTitle}</h1>
                                     <p className='text-center text-[#4A4A52]'>${product.price}/kg</p>
@@ -91,26 +89,26 @@ export default blog;
 const products = [
     {
         id: 1,
-        image: "",
+        image: "https://i.ibb.co.com/tHHPKSh/mushroom.png",
         foodTitle: "Mushroom",
         price: 50
     },
     {
         id: 2,
-        image: "",
-        foodTitle: "Mushroom",
+        image: "https://i.ibb.co.com/bJX4JNT/16-2.jpg",
+        foodTitle: "Mustard",
         price: 50
     },
     {
         id: 3,
-        image: "",
-        foodTitle: "Mushroom",
+        image: "https://i.ibb.co.com/bBSVdCx/16-3.jpg",
+        foodTitle: "Orange",
         price: 50
     },
     {
         id: 4,
-        image: "",
-        foodTitle: "Mushroom",
+        image: "https://i.ibb.co.com/WtMWzDf/16-4.jpg",
+        foodTitle: "Pomegranate",
         price: 50
     },
 ]

@@ -12,7 +12,7 @@ const FreshProducts = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await fetch('https://fresh-harvests-beta.vercel.app/api');
+                const response = await fetch('http://localhost:3000/api');
                 const data = await response.json();
 
                 setProducts(data);
@@ -26,7 +26,6 @@ const FreshProducts = () => {
 
     const handleFilter = e => {
         const filter = e.target.value;
-        // console.log(filter);
 
         if (filter === 'ALL') {
             setDisplayProducts(products);
@@ -36,7 +35,6 @@ const FreshProducts = () => {
                 const value = product.categoryName;
                 return value.toUpperCase() === filter
             });
-            // console.log(filteredProducts);
             setDisplayProducts(filteredProducts);
         }
         else if (filter === 'VEGETABLES') {
@@ -44,7 +42,6 @@ const FreshProducts = () => {
                 const value = product.categoryName;
                 return value.toUpperCase() === filter
             });
-            // console.log(filteredProducts);
             setDisplayProducts(filteredProducts);
         }
         else if (filter === 'SALAD') {
@@ -52,7 +49,6 @@ const FreshProducts = () => {
                 const value = product.categoryName;
                 return value.toUpperCase() === filter
             });
-            // console.log(filteredProducts);
             setDisplayProducts(filteredProducts);
         }
     }
@@ -94,54 +90,3 @@ const FreshProducts = () => {
 };
 
 export default FreshProducts;
-
-// const products = [
-//     {
-//         id: 1,
-//         image: "",
-//         foodTitle: "Mushroom",
-//         price: 50
-//     },
-//     {
-//         id: 2,
-//         image: "",
-//         foodTitle: "Mushroom",
-//         price: 50
-//     },
-//     {
-//         id: 3,
-//         image: "",
-//         foodTitle: "Mushroom",
-//         price: 50
-//     },
-//     {
-//         id: 4,
-//         image: "",
-//         foodTitle: "Mushroom",
-//         price: 50
-//     },
-//     {
-//         id: 5,
-//         image: "",
-//         foodTitle: "Mushroom",
-//         price: 50
-//     },
-//     {
-//         id: 6,
-//         image: "",
-//         foodTitle: "Mushroom",
-//         price: 50
-//     },
-//     {
-//         id: 7,
-//         image: "",
-//         foodTitle: "Mushroom",
-//         price: 50
-//     },
-//     {
-//         id: 8,
-//         image: "",
-//         foodTitle: "Mushroom",
-//         price: 50
-//     }
-// ]

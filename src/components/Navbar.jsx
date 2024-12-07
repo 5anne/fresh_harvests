@@ -8,21 +8,10 @@ import { RiShoppingCartFill } from "react-icons/ri";
 
 const Navbar = () => {
     const [isLoginModalOpen, setIsLoginModalOpen] = useState(true);
-    const [user, setUser] = useState([]);
-    console.log(user);
 
     const toggleModal = () => {
         setIsLoginModalOpen(!isLoginModalOpen);
     };
-
-    const handleUserLogin = e => {
-        e.preventDefault();
-
-        console.log(e.target.email.value);
-        const email = e.target.email.value;
-        const filteredUser = users?.find(data => data.user_email === email);
-        setUser(filteredUser);
-    }
 
     return (
         <div className='navbar flex justify-evenly items-center bg-[#749B3F80] h-20 fixed z-10 w-screen'>
@@ -78,17 +67,7 @@ const Navbar = () => {
             <div className='flex items-center gap-4 text-[#FFFFFF]'>
                 <button className='hidden lg:flex items-center gap-2'><FaHeart />Favorites</button>
                 <button className='flex items-center gap-2 ml-10 lg:ml-0'><RiShoppingCartFill /><span className='hidden lg:flex'>Cart</span></button>
-                {/* {
-                    user ?
-                        <>
-                            <Link href={`/adminDashboard/${user?.user_email}`} className='rounded-full'>
-                                <Image width={40} height={40} alt={user?.user_name} src={user?.image}></Image>
-                            </Link>
-                        </> :
-                        <>
-                            
-                        </>
-                } */}
+
                 <button className='hidden lg:flex border-2 border-[#FFFFFF] rounded-lg px-4 py-2' onClick={() => document.getElementById('my_modal_3').showModal()}>Sign In</button>
                 {
                     isLoginModalOpen ?
@@ -98,7 +77,7 @@ const Navbar = () => {
                                     <form method="dialog">
                                         <button className="btn btn-sm btn-circle absolute right-2 top-2">✕</button>
                                     </form>
-                                    <form onSubmit={handleUserLogin} method="card-body">
+                                    <form method="card-body">
                                         <h1 className='text-center text-3xl text-black font-extrabold my-4'>Login</h1>
                                         <div className="form-control">
                                             <label className="label">
