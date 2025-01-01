@@ -2,7 +2,6 @@ import React from 'react';
 import SectionTitle from './SectionTitle';
 import Image from 'next/image';
 import leaf from "../images/leaf2.jpg";
-import blogImg from "../images/blogImg1.jpg";
 import { FaLongArrowAltRight } from 'react-icons/fa';
 
 const BlogSection = () => {

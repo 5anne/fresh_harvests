@@ -1,4 +1,4 @@
-"use client"
+
 import About from "@/components/About";
 import Banner from "@/components/Banner";
 import BlogSection from "@/components/BlogSection";
@@ -7,11 +7,14 @@ import FreshProducts from "@/components/FreshProducts";
 import Navbar from "@/components/Navbar";
 import Offer from "@/components/Offer";
 import Testimonial from "@/components/Testimonial";
+import { auth } from "../../auth";
 
-export default function Page() {
+export default async function Page() {
+    const session = await auth();
+    console.log(session);
     return (
         <>
-            <Navbar></Navbar>
+            <Navbar session={session}></Navbar>
             <Banner></Banner>
             <div className="lg:w-[1080px] mx-auto">
                 <FreshProducts></FreshProducts>
